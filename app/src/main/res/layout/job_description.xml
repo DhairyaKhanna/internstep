@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/toolbar_job_description"
+        android:background="#FFFFFF"
+        android:elevation="20dp">
+
+
+        <Button
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/toolbar_back_job_description"
+            android:background="@drawable/ic_arrow_back_black">
+
+        </Button>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/google"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/company_logo">
+
+        </ImageView>
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_job_description">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            android:layout_below="@+id/toolbar_job_description"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:id="@+id/job_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar_job_description"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserrat_bols"
+                android:text="Job name"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/job_name"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/opensans"
+                android:text="Job Description"
+                android:textSize="18sp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/opensans"
+                android:text="Produce high quality images, videos
+and GIFs as per defined standards
+and guidelines. Edit, retouch and
+package the final images, videos
+and GIFs using Adobe software.
+Learn and deepen expertise on Apple
+software, UI, and navigation screens.
+Meet individual goals by adhering to
+delivery timelines and set targets.
+Work in strong collaboration with
+other production artists to achieve
+team goals. Analyse and understand
+feedback from partners, and
+incorporate findings in subsequent
+work
+• Expertise on Adobe Creative Suite:
+Photoshop, Illustrator, Premier Pro,
+After Effects, etc."
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="More Information"
+                android:textSize="20sp"
+                android:fontFamily="@font/opensans"
+                android:textStyle="bold"
+                android:id="@+id/moreInfo"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/more_info1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:fontFamily="@font/opensans"
+                android:text="Content under more information">
+
+            </TextView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/popiins"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:text="Apply for Internship"
+        android:id="@+id/apply"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="@android:color/white"
+        >
+
+    </Button>
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location: Bengalore/IN"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:textColor="#4e74f4"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/popiins"
+        >
+
+    </TextView>
+
+
+
+
+</RelativeLayout>

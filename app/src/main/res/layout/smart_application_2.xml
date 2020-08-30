@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:id="@+id/toolbar_smart_application_2"
+        android:background="#FFFFFF"
+        android:elevation="20dp">
+
+
+        <Button
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/toolbar_back_smart_application_2"
+            android:background="@drawable/ic_arrow_back_black">
+
+        </Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "Smart Application"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="@font/opensans"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            >
+
+        </TextView>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/sa_linear_layout"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar_smart_application_2">
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/relative_layout_sa"
+            android:background="#DBE3FD"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="23dp">
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/folder"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:id="@+id/folder_sa">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload"
+                android:clickable="true"
+                android:textColor="#4E74F4"
+                android:fontFamily="@font/popiins"
+                android:textSize="20sp"
+                android:layout_below="@+id/folder_sa"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="20dp"
+                android:id="@+id/upload_sa">
+
+            </TextView>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Resume"
+                android:textColor="#000000"
+                android:fontFamily="@font/popiins"
+                android:textSize="20sp"
+                android:layout_below="@+id/folder_sa"
+                android:layout_toEndOf="@+id/upload_sa"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="5dp"
+                android:id="@+id/Yourid">
+
+            </TextView>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(pdf)"
+                android:textColor="#000000"
+                android:fontFamily="@font/popiins"
+                android:textSize="12sp"
+                android:layout_below="@+id/folder_sa"
+                android:layout_toEndOf="@+id/Yourid"
+                android:layout_marginTop="48dp"
+                android:layout_marginStart="05dp"
+
+                android:id="@+id/Youridpdf">
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+
+
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_marginStart="30dp"
+            android:layout_height="50dp"
+            android:text="Continue"
+            android:textSize="15sp"
+            android:fontFamily="@font/popiins"
+            android:background="@drawable/button"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="120dp"
+            android:id="@+id/continue_sa">
+
+        </Button>
+
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/status_application_2"
+        android:layout_marginEnd="40dp"
+        android:layout_below="@+id/sa_linear_layout"
+        android:layout_centerHorizontal="true">
+
+    </ImageView>
+
+</RelativeLayout>

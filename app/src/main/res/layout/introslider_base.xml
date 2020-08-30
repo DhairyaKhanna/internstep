@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager"/>
+
+    <Button
+        android:id="@+id/skipforNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#4e74f4"
+        android:text="Skip for now"
+        android:textColor="#707070"
+        android:fontFamily="@font/popiins"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        >
+
+    </Button>
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#4e74f4"
+        android:text="Next"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/popiins"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentBottom="true"
+        >
+
+    </Button>
+
+
+
+
+
+
+</RelativeLayout>

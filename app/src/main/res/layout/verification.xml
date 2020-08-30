@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar_verify">
+
+    </include>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="250dp"
+        android:stretchColumns="1">
+
+    <TableRow
+
+        android:baselineAligned="true">
+        <EditText
+            android:background="@drawable/code"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            >
+
+        </EditText>
+
+        <EditText
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/code">
+
+        </EditText>
+
+        <EditText
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/code">
+
+        </EditText>
+
+        <EditText
+            android:background="@drawable/code"
+            android:layout_marginEnd="80dp"
+
+            >
+
+        </EditText>
+
+
+
+    </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/verify"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="230dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/popiins"
+        android:text="Verify"
+        android:textSize="20sp">
+
+    </Button>
+
+
+</RelativeLayout>

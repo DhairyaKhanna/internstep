@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<include
+    layout="@layout/toolbar_intro"
+    android:id="@+id/toolbar_intro">
+
+</include>
+
+<TableRow
+android:layout_width="300dp"
+android:layout_height="50dp"
+android:layout_marginStart="50dp"
+android:layout_marginTop="40dp"
+android:background="@drawable/signin_page"
+    >
+
+<TextView
+    android:paddingTop="5dp"
+    android:textAlignment="center"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:layout_marginStart="40dp"
+    android:fontFamily="@font/popiins"
+    android:text="Creative"
+    android:textSize="20sp">
+
+</TextView>
+
+<RadioButton android:layout_width="wrap_content"
+    android:layout_marginStart="100dp">
+
+
+</RadioButton>
+</TableRow>
+<TableRow
+android:layout_width="300dp"
+android:layout_height="50dp"
+android:layout_marginStart="50dp"
+android:layout_marginTop="40dp"
+android:background="@drawable/signin_page"
+    >
+
+<TextView
+    android:paddingTop="5dp"
+    android:textAlignment="center"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:layout_marginStart="40dp"
+    android:fontFamily="@font/popiins"
+    android:text="Coder"
+    android:textSize="20sp">
+
+</TextView>
+
+<RadioButton
+    android:layout_width="wrap_content"
+    android:layout_marginStart="125dp">
+
+
+</RadioButton>
+</TableRow>
+<TableRow
+android:layout_width="300dp"
+android:layout_height="50dp"
+android:layout_marginStart="50dp"
+android:layout_marginTop="40dp"
+android:background="@drawable/signin_page"
+    >
+
+<TextView
+    android:paddingTop="5dp"
+    android:textAlignment="center"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:layout_marginStart="40dp"
+    android:fontFamily="@font/popiins"
+    android:text="Writer"
+    android:textSize="20sp">
+
+</TextView>
+
+<RadioButton
+    android:layout_width="wrap_content"
+    android:layout_marginStart="125dp">
+
+
+</RadioButton>
+</TableRow>
+<TableRow
+android:layout_width="300dp"
+android:layout_height="50dp"
+android:layout_marginStart="50dp"
+android:layout_marginTop="40dp"
+android:background="@drawable/signin_page"
+    >
+
+<TextView
+    android:paddingTop="5dp"
+    android:textAlignment="center"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:layout_marginStart="40dp"
+    android:fontFamily="@font/popiins"
+    android:text="Artist"
+    android:textSize="20sp">
+
+</TextView>
+
+<RadioButton
+    android:layout_width="wrap_content"
+    android:layout_marginStart="135dp">
+
+
+</RadioButton>
+</TableRow>
+<TableRow
+android:layout_width="300dp"
+android:layout_height="50dp"
+android:layout_marginStart="50dp"
+android:layout_marginTop="40dp"
+android:background="@drawable/signin_page"
+    >
+
+<TextView
+    android:paddingTop="5dp"
+    android:textAlignment="center"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:layout_marginStart="40dp"
+    android:fontFamily="@font/popiins"
+    android:text="I'm nor sure yet"
+    android:textSize="20sp">
+
+</TextView>
+
+<RadioButton
+
+    android:layout_width="wrap_content"
+    android:layout_marginStart="35dp">
+
+
+</RadioButton>
+</TableRow>
+<TableRow
+android:layout_width="300dp"
+android:layout_height="50dp"
+android:layout_marginStart="50dp"
+android:layout_marginTop="40dp"
+android:background="@drawable/signin_page"
+    >
+
+<Button
+    android:background="@drawable/rectangle_signin"
+    android:text="Next"
+    android:fontFamily="@font/popiins">
+
+</Button>
+
+
+</TableRow>
+
+
+
+    </LinearLayout>

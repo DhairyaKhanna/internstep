@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="128dp"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#4E74F4"
+    android:textAlignment="center"
+    android:id="@+id/toolbar_verify"
+    >
+
+
+    <TextView
+        android:layout_width="246dp"
+        android:layout_height="28dp"
+        android:text="Enter the Verification Code"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="@font/popiins"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:textColor="@android:color/white"
+        />
+    <Button
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/button_toolbar_verify"
+
+        android:background="@drawable/ic_arrow_back_white_24dp">
+
+    </Button>
+
+</androidx.appcompat.widget.Toolbar>
