@@ -138,9 +138,9 @@ public class JobsDescription  extends AppCompatActivity {
                                     assert jobs != null;
 
                                    // Here jobs.getApplied() should return a boolean to check whether it is true or not
-                                    //change the type of applied in jobs.java to boolen in database to do the changes
+                                    //change the type of applied in jobs.java to boolean  and also in database to do the changes
 
-                                    if (applied.equals("No")) {
+                                    if (!applied.equals("Yes")) {
                                         Intent intent = new Intent(JobsDescription.this, SoftwareListActivity.class);
                                         intent.putExtra("company_name", company_name);
                                         intent.putExtra("job_position", job_position);
@@ -152,7 +152,6 @@ public class JobsDescription  extends AppCompatActivity {
                                     }
                                     else{
                                         Toast.makeText(JobsDescription.this,"Already Applied",Toast.LENGTH_SHORT).show();
-
 
                                     }
                                 }

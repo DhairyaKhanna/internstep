@@ -236,6 +236,12 @@ public class ResumeActivity extends AppCompatActivity {
     private void uploadImage() {
         final String[] muri = new String[1];
         if (filePath != null) {
+
+                progressDialog = new ProgressDialog(this,R.style.MyAlertDialogStyle);
+                progressDialog.setTitle("Uploading...");
+                progressDialog.setCancelable(false);
+                progressDialog.setIndeterminate(true);
+                progressDialog.show();
             //DataSnapshot dataSnapshot = null;
             //User user1 = dataSnapshot.getValue(User.class);
             String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
@@ -260,7 +266,7 @@ public class ResumeActivity extends AppCompatActivity {
                     ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                         @Override
                         public void onSuccess(Uri uri) {
-                            //progressDialog.dismiss();
+                            progressDialog.dismiss();
                             muri[0] = uri.toString();
                             //muri[0] = Objects.requireNonNull(Objects.requireNonNull(Objects.requireNonNull(task.getResult()).getMetadata()).getReference()).getDownloadUrl().toString();
                             Log.i("url",muri[0]);

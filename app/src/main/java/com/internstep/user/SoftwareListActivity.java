@@ -91,27 +91,18 @@ public class SoftwareListActivity extends AppCompatActivity {
                                     Jobs jobs = jobSnapshot.getValue(Jobs.class);
                                     assert jobs != null;
                                     if(jobs.getJob_name().equals(job_name)) {
-
+                                        jobSnapshot.getRef().child("software").setValue(soft_list);
                                         jobs.setSoftware(soft_list);
                                         //String str = "Yes";
                                         //Map<String,Object> hashMap= new HashMap<>();
                                         //hashMap.put("software",soft_list);
-                                        if(!soft_list.isEmpty()) {
-                                            //reference.child("").updateChildren(hashMap);
-                                            jobSnapshot.getRef().child("software").setValue(soft_list);
-                                            Intent intent = new Intent(SoftwareListActivity.this, ResumeActivity.class);
-                                            intent.putExtra("company_name", company_name);
-                                            intent.putExtra("job_position", job_name);
-                                            startActivity(intent);
-                                        }
-                                        else{
-                                            Toast.makeText(SoftwareListActivity.this,"Please answer the question",Toast.LENGTH_SHORT).show();
 
-                                        }
 
 
                                     }
+
                                 }
+
                             }
                         }
 
@@ -122,15 +113,15 @@ public class SoftwareListActivity extends AppCompatActivity {
 
                     }
                 });
-               /* if(soft_list.isEmpty()){
+                if(soft_list.isEmpty()){
                     Toast.makeText(SoftwareListActivity.this,"Please answer the question",Toast.LENGTH_SHORT).show();
                 }
                 else {
                     Intent intent = new Intent(SoftwareListActivity.this, ResumeActivity.class);
-                    intent.putExtra("company_nae", company_name);
+                    intent.putExtra("company_name", company_name);
                     intent.putExtra("job_position", job_name);
                     startActivity(intent);
-                } */
+                }
 
 
             }
