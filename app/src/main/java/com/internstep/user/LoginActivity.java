@@ -9,6 +9,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -32,6 +33,7 @@ import com.internstep.user.Models.Companies;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class LoginActivity extends AppCompatActivity {
     EditText email,pass1;
@@ -42,6 +44,7 @@ public class LoginActivity extends AppCompatActivity {
     FirebaseUser firebaseUser;
     private List<Companies> companies,companies1;
     Companies company1;
+    TextView forgot_password;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +53,7 @@ public class LoginActivity extends AppCompatActivity {
         pass1 = findViewById(R.id.password);
         submit = findViewById(R.id.submit);
         back = findViewById(R.id.toolbar11_button);
+        forgot_password = findViewById(R.id.click_here);
         FirebaseApp.initializeApp(this);
         //firebaseUser = mAuth.getCurrentUser();
         mAuth = FirebaseAuth.getInstance();
@@ -186,6 +190,21 @@ public class LoginActivity extends AppCompatActivity {
                     });
 
                 }
+            }
+        });
+
+
+        forgot_password.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent emailIntent = new Intent(Intent.ACTION_SEND);
+                //Intent emailIntent = new Intent(Intent.ACTION_SEND);
+                //emailIntent.setType("plain/text");
+                emailIntent.putExtra(Intent.EXTRA_EMAIL,new String[] {"ceo@internstep.in"});
+                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Re: Help me retrieve my password for my email [Enter your registered email address]");
+                emailIntent.setType("message/rfc822");
+                Objects.requireNonNull(getBaseContext()).startActivity(Intent.createChooser(emailIntent,null));
+
             }
         });
 

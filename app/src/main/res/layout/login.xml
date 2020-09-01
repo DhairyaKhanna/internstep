@@ -77,6 +77,7 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="250dp"
+        android:textSize="15sp"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/linear_layout_login"
         android:background="@drawable/button"
@@ -86,34 +87,37 @@
         android:text="Continue"/>
 
 
-   <!-- <LinearLayout
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/submit"
+        android:fontFamily="@font/popiins"
         android:layout_marginTop="20dp"
-        android:orientation="horizontal"
-        android:layout_marginStart="40dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="By entering you agree"
-            android:textSize="15sp"
-            android:fontFamily="@font/popiins"
-            >
+        android:text="Forgot your Password?"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@id/submit"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="60dp"
+        android:id="@+id/fp_text"
+        >
 
-        </TextView>
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/popiins"
+        android:layout_marginTop="20dp"
+        android:text="Click Here"
+        android:layout_marginStart="5dp"
+        android:textSize="18sp"
+        android:textColor="@color/blue"
+        android:onClick="support"
+        android:id="@+id/click_here"
+        android:layout_below="@id/submit"
+        android:layout_toEndOf="@+id/fp_text"
+        android:layout_centerHorizontal="true">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:text= "Terms and Conditions"
-            android:textColor="#4e74f4"
-            android:fontFamily="@font/popiins">
-
-        </TextView>
-
-    </LinearLayout>-->
+    </TextView>
 
 
 

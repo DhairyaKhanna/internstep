@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -31,12 +32,16 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
+
+import static java.security.AccessController.getContext;
 
 public class Password extends AppCompatActivity {
     EditText password,confirm_password;
     boolean val= true;
     Button register,back;
     FirebaseAuth mAuth;
+    TextView forgot_password;
     private ProgressDialog mProgress;
     DatabaseReference reference;
     private List<Companies> companies;
@@ -50,6 +55,7 @@ public class Password extends AppCompatActivity {
         password = findViewById(R.id.pass);
         confirm_password = findViewById(R.id.confirm_pass);
         register = findViewById(R.id.submit);
+        forgot_password = findViewById(R.id.click_here);
         //final User user = new User();
         Intent i = getIntent();
         final User user  = (User)i.getSerializableExtra("user_data");
@@ -201,6 +207,8 @@ public class Password extends AppCompatActivity {
                 }
             }
         });
+
+
 
 
 
